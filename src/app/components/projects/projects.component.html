@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="heading">
+        <span>Projects</span>
+    </h1>
+    <div class="projects">
+        <div *ngFor="let project of data" class="projects-container">
+            <div class="projects-details">
+                <div class="projects-img">
+                    <a [href]="project.url"  target="_blank">
+                        <img [src]="project.img" [alt]="project.name">
+                    </a>  
+                </div>
+                <div class="projects-name"> {{project.name}}</div>
+                <div class="projects-tags" >
+                    <div *ngFor="let tag of project.tags">
+                        <p class="projects-tags-name">{{tag.name}}</p>
+                    </div>
+                </div>  
+                <div class="projects-info">
+                    <a [href]="project.link" target="_blank" class="projects-info-link">
+                        <span>Read More</span>
+                        <span class="projects-info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 35 35" id="arrow"><path d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path></svg>                   
+                        </span>
+                    </a>
+                </div>
+            </div>
+       </div>
+    </div>
+ 
+</div>

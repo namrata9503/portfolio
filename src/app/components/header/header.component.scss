@@ -1,0 +1,217 @@
+:host {
+    display: block;
+    padding: 4rem 2rem 6rem;
+    background-color: var(--grey-dark);
+    background: linear-gradient(217deg, rgba(36, 36, 85, 0.884), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, var(--grey-dark), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, var(--green), rgba(0,0,255,0) 70.71%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90% );
+}
+
+.container {
+    font-family: 'Roboto', sans-serif;;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.details {
+    grid-row: 3/4;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+
+.name {
+    grid-row: 3/4;
+    padding: 2rem;
+    color: white;
+    font-size: 3rem;
+   // margin-top: 3rem;
+    white-space: nowrap;
+   // margin: auto;
+    span {
+        &:nth-of-type(1) {
+        span {
+            font-size: 3rem;
+            color: var(--green);
+        }
+    }
+        &:nth-of-type(2) {
+            display: block;
+            margin: 20px 0;
+            color: var(--green);
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 10px 0;
+            letter-spacing: 8px;
+            text-shadow: 10px 8px 10px var(--black);
+        }
+    }
+}
+
+  .blink {
+    border-right-style: solid;
+    animation: blink .75s step-end infinite;  
+  
+}
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+  }
+
+  .contacts {
+    grid-row: 4/4;
+    display: flex;
+    align-items: center;
+  .download-button {
+    margin: 0 10px 10px 35px;
+    background-color: var(--grey-dark);
+    box-shadow: -1px -1px 15px 0px var(--green);
+    transition: .3s ease-in-out 0s;
+     a {
+        color: #fff;
+        text-decoration: none;
+     }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: -1px -1px 15px 0px var(--green);
+    }
+  }
+
+  .icon {
+    margin: 0 10px 10px 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+  }
+}
+}
+.profile {
+    width: 300px;
+    height: 300px;
+    grid-row: 2/3;
+    margin: 0 auto;
+    position: relative;
+    clip-path: inset(0 round 0 0 25%);
+    .profile-bg {
+        background-color: var(--green);
+        position: absolute;
+        height: 75%;
+        width: 100%;
+        bottom: 0%;
+        clip-path: inset(0 round 50% 0 0);
+    }
+    img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        position: absolute;
+    }
+}
+
+/* largeScreen */
+
+// :host.largeScreen {
+
+  @media (min-width:1280px){
+    :host {
+        padding: 4rem 2rem 10rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90% );
+        .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        height: 100%;
+    }
+    
+    .profile {
+        grid-row: 1/3;
+        grid-column: 2/2;
+        width: 600px;
+        height: 600px;
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            position: absolute;
+        }
+    }
+
+    .details {
+        grid-row: 2/2;
+        grid-column: 1/1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .name {
+
+            grid-row: 1/2;
+            width: 600px;
+            margin: auto;
+            margin-left: 0;
+            margin-bottom: 0;
+            height: max-content;
+        }
+        .contacts {
+            grid-row: 2/4;
+            display: flex;
+            align-items: center;
+          //  margin-left: -400px;
+            justify-content: flex-start;
+        }
+    }
+
+    
+}
+  }
+
+  /* mediumScreen */
+
+
+    @media (min-width:980px){
+        :host {
+            padding: 4rem 2rem 10rem;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90% );
+            .container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+            height: 100%;
+        }
+        .profile {
+            grid-row: 1/3;
+            grid-column: 2/2;
+            width: 400px;
+            height: 400px;
+            img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                position: absolute;
+            }
+        }
+        .details {
+            grid-row: 2/2;
+            grid-column: 1/1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .name {
+    
+                grid-row: 1/2;
+                width: 600px;
+                margin: auto;
+                margin-left: 0;
+                margin-bottom: 0;
+                height: max-content;
+            }
+            .contacts {
+                grid-row: 2/4;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+    }
+}

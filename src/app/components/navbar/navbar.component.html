@@ -1,0 +1,22 @@
+    <mat-toolbar class="sticky">
+        <a routerLink="/" class="nav-item">
+            <span>My Portfolio</span>
+        </a>
+        <span class="fill-remaining-space"></span>
+        <div fxLayout="row" fxHide fxShow.gt-sm>         
+            <button class="nav-item" routerLinkActive="active" routerLink="/about" mat-raised-button>About</button>
+            <button class="nav-item" routerLinkActive="active" routerLink="/projects" mat-raised-button>Projects</button>
+            <button class="nav-item" routerLinkActive="active" routerLink="/contact" mat-raised-button>Contact</button>
+        </div>
+        <button class="nav-button" mat-button [mat-menu-trigger-for]="menu" fxShow fxHide.gt-sm>
+         <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar>
+    <mat-menu x-position="before" #menu>
+        <button  routerLinkActive="active"  routerLink="/about" mat-menu-item>About</button>
+        <button  routerLinkActive="active"  routerLink="/projects" mat-menu-item>Projects</button>
+        <button  routerLinkActive="active"  routerLink="/contact" mat-menu-item>Contact</button>
+    </mat-menu>
+    
+    
+    

@@ -1,0 +1,59 @@
+<div class="container">
+    <h1 class="heading">
+        <span>About Me</span>
+    </h1>
+    <div class="title">
+        <p>{{title}}</p>
+    </div>
+    <div class="description">
+        <p>{{description}}</p>
+    </div>
+    <ul class="my-details">
+        <li class="location">
+            <span class="location-icon">
+                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker" class="svg-inline--fa fa-map-marker fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z"></path></svg>
+            </span>
+            <span class="location-text">Almere, Netherlands</span>
+        </li>
+        <li class="email">
+            <span class="email-icon">
+                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mail-bulk" class="svg-inline--fa fa-mail-bulk fa-w-18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z"></path></svg>
+            </span>
+            <span class="email-text">nam9503@gmail.com</span>
+        </li>
+        <li class="education">
+            <span class="education-icon">
+                <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="graduation-cap" class="svg-inline--fa fa-graduation-cap fa-w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>
+            </span>
+            <span class="education-text">Bachlor's of Engineering</span>
+        </li>
+        <li class="certification">
+            <span class="certification-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="microsoft"><path fill="#4CAF50" d="M8.5 7.5H16v-7a.5.5 0 0 0-.5-.5h-7v7.5z"></path><path fill="#F44336" d="M7.5 7.5V0h-7a.5.5 0 0 0-.5.5v7h7.5z"></path><path fill="#2196F3" d="M7.5 8.5H0v7a.5.5 0 0 0 .5.5h7V8.5z"></path><path fill="#FFC107" d="M8.5 8.5V16h7a.5.5 0 0 0 .5-.5v-7H8.5z"></path></svg>            </span>
+            <span class="certification-text">Azure fundamentals</span>
+        </li>
+    </ul>
+    <div class="about-skill">
+        <div class="skills">
+            <p class="title">Skills</p>
+            <div class="details" >
+                <div *ngFor="let s of skills">
+                    <p class="name">{{s}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <p class="title">Tools</p>
+            <div class="details" >
+                <div *ngFor="let t of tools">
+                    <p class="name">{{t}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="about-me">
+        <p *ngFor="let sentence of aboutMe">
+            {{sentence}}
+        </p>
+    </section>
+</div>

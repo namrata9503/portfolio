@@ -1,0 +1,99 @@
+ [
+  {
+    "name": "Text-Processor",
+    "url": "https://word-processor-68fe1.web.app/",
+    "img": "../assets/projects/text-processor.png",
+    "tags": [
+      { "name": "Angular" },
+      { "name": "Typescript" },
+      { "name": "Tailwind" },
+      { "name": "Angular Material" },
+      { "name": "Jasmine/Karma" }
+    ],
+      "link": "https://github.com/namrata9503/text-processor"
+  },
+  {
+    "name": "Coffee-Time",
+    "url": "https://github.com/namrata9503/coffee-time-angular/blob/master/README.md",
+    "img": "../assets/projects/coffee-time.png",
+    "tags": [
+      { "name": "Angular" },
+      { "name": "Typescript" },
+      { "name": "Tailwind" },
+      { "name": "Javascript" },
+      { "name": "NodeJS" }
+    ],
+      "link": "https://github.com/namrata9503/coffee-time-angular"
+  },
+  {
+    "name": "Flowers Valley",
+    "url": "https://flowers-valley.web.app/",
+    "img": "../assets/projects/Flowers.png",
+    "tags": [
+      { "name": "CSS3" },
+      { "name": "ReactJS" },
+      { "name": "Redux" }
+    ],
+    "link": "https://github.com/namrata9503/react-redux-flowers"
+  },
+  {
+    "name": "Daily Expenses",
+    "url": "https://expense-tracker-appp.web.app/",
+    "img": "../assets/projects/expense.png",
+    "tags": [
+      { "name": "Angular" },
+      { "name": "Typescript" },
+      { "name": "CSS3" },
+      { "name": "Javascript" }
+    ],
+    "link": "https://github.com/namrata9503/daily-expense-ng-app"
+  },
+  {
+    "name": "Weather App",
+    "url": "https://weather-applications-b59b1.web.app/",
+    "img": "../assets/projects/weather.png",
+    "tags": [
+      { "name": "ReactJS" },
+      { "name": "Javascript" },
+      { "name": "html/css" },
+      { "name": "API" }
+    ],
+    "link": "https://github.com/namrata9503/weather-app-react"
+  },
+  
+  {
+    "name": "CSS Grid Style",
+    "url": "https://namrata9503.github.io/app-grid/",
+    "img": "../assets/projects/grid.png",
+    "tags": [
+      { "name": "SCSS" },
+      { "name": "HTML5" }
+    ],
+    "link": "https://github.com/namrata9503/app-grid"
+  },
+  {
+    "name": "Fitness Treat",
+    "url": "https://fitness-treat.firebaseapp.com/login",
+    "img": "../assets/projects/fitness-app.png",
+    "tags": [
+      { "name": "CSS3" },
+      { "name": "Angular" },
+      { "name": "Typescript" }
+    ],
+    "link": "https://github.com/namrata9503/ng-fitness"
+  },
+  {
+    "name": "World Essence",
+    "url": "https://namrata9503.github.io/World-Essence/",
+    "img": "../assets/projects/world.png",
+    "tags": [
+      { "name": "Javascript" },
+      { "name": "CSS3" }
+    ],
+    "link": "https://github.com/namrata9503/World-Essence"
+  }
+  
+]
+
+
+ 
